@@ -1,0 +1,143 @@
+.main-container {
+	width: 100%;
+	padding: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+}
+
+.announ-main-container {
+	max-width: 800px;
+	width: 100%;
+}
+
+.announ-main-container + * {
+	margin-top: 15px;
+}
+
+.announ-content-container {
+	display: flex;
+	max-width: 800px;
+	width: 100%;
+	height: 400px;
+	padding: 15px 20px 15px 20px;
+	background: url("/img/24192-ed4_wide.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.announ-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+}
+
+.announ-actions {
+	/* width: 50px;
+	height: 25px; */
+	background-color: #fff;
+}
+
+#actions {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	color: white;
+	width: 100px;
+	height: 45px;
+	background-color: rgb(131, 130, 130);
+	border-radius: 10px;
+	letter-spacing: 0.6pt;
+}
+
+.announ-main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.announ-title-back {
+	background-color: rgba(59, 59, 59, 0.5);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.announ-title {
+	font-weight: 500;
+	/* font-size: 2vw; */
+	display: flex;
+}
+
+.announ-title h1 {
+	margin: 0px;
+}
+
+.announ-description-back {
+	background-color: rgba(59, 59, 59, 0.5);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.announ-description {
+	display: flex;
+	/* font-size: 1.5vw; */
+}
+
+.announ-info-container {
+	width: 100%;
+}
+
+.announ-info-content {
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 6px rgb(200 199 199);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#btn-announ-search {
+	padding: 5px;
+	background-color: #5894f5;
+	height: 30px;
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+
+#btn-announ-search:hover {
+	background-color: rgb(0, 51, 255);
+	animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	60%,
+	100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+.announ-info-content input {
+	background: none;
+}
+
+.announ-info-content label {
+	cursor: default;
+}

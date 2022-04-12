@@ -1,0 +1,74 @@
+.header-container {
+	font-weight: 500;
+	font-size: 15px;
+	width: 100%;
+}
+
+.header-top {
+	width: 100%;
+	background-color: #9cbef5;
+	display: flex;
+	justify-content: center;
+}
+
+.header-top-container {
+	max-width: 1300px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.header-top-container ul {
+	display: flex;
+}
+
+.header-top-container button {
+	min-height: 25px;
+	margin: 8px;
+	background-color: #fff;
+	padding: 10px;
+	line-height: 1.4;
+	border-radius: 45px;
+	transition: all 0.2s ease;
+}
+
+.header-top-container button:hover {
+	background-color: rgb(167, 161, 161);
+}
+
+.header-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 6px rgb(200, 199, 199);
+}
+
+.header-bottom-container {
+	max-width: 1300px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 10px 10px 0px 10px;
+}
+
+.header-bottom-container ul {
+	display: flex;
+}
+
+.header-bottom-container ul li + li {
+	margin-left: 30px;
+}
+
+.header-bottom-container ul li a {
+	display: block;
+	height: 30px;
+	transition: all 0.2s ease;
+}
+
+.header-bottom-container ul li a:hover {
+	border-bottom: 2px solid rgb(105, 92, 217);
+	color: rgb(154, 149, 149);
+}
