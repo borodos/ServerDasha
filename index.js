@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 // -- Подключение пакета Express-HandleBars
 const exphbs = require("express-handlebars");
 const todoRoutes = require("./routes/todos");
+const path = require("path");
 
 const PORT = process.env.PORT || 8000;
 
@@ -23,6 +24,7 @@ app.set("views", "views");
 
 // -- Для регистрации роута обращаемся к методу use объекта app, который позволяет добавлять новые middleware
 app.use(todoRoutes);
+app.use(express.static(path.join(__dirname, "public")));
 
 async function start() {
 	try {
